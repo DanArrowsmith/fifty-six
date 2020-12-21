@@ -112,7 +112,7 @@ export default function TemporaryDrawer() {
           onClick={toggleDrawer(side, false)}
           onKeyDown={toggleDrawer(side, false)}
           >
-          Footer Link 1
+          PADI
           </Button>
           </ListItem>
 
@@ -123,7 +123,7 @@ export default function TemporaryDrawer() {
           onClick={toggleDrawer(side, false)}
           onKeyDown={toggleDrawer(side, false)}
           >
-          Footer Link 2
+          Dive Compare
           </Button>
           </ListItem>
                 <ListItem
@@ -133,7 +133,7 @@ export default function TemporaryDrawer() {
           onClick={toggleDrawer(side, false)}
           onKeyDown={toggleDrawer(side, false)}
           >
-          Footer Link 3
+          Koh Tao Guide
           </Button>
           </ListItem>
 

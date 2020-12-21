@@ -15,6 +15,7 @@ import FacebookIcon from '@material-ui/icons/Facebook';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import YouTubeIcon from '@material-ui/icons/YouTube';
 import ListItem from '@material-ui/core/ListItem';
+import { Link } from "gatsby"
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -44,7 +45,7 @@ const useStyles = makeStyles(theme => ({
     width: 250,
   },
   mobilenav:{
-    '@media (min-width:820px)':{
+    '@media (min-width:1101px)':{
       display: 'none',
     }
   },
@@ -112,17 +113,19 @@ export default function TemporaryDrawer() {
             </ExpansionPanelSummary>
             <ExpansionPanelDetails classes={{root:classes.panel}}>
               <List>
+              <Link to="/discover-scuba-diving">
               <ListItem
               classes={{root:classes.listItem}}
               >
+      
               <Button
               onClick={toggleDrawer(side, false)}
               onKeyDown={toggleDrawer(side, false)}
               >
               Discover Scuba
               </Button>
-              </ListItem>
-              <ListItem
+              </ListItem></Link>
+              <Link to="/padi-open-water"><ListItem
               classes={{root:classes.listItem}}
               >
               <Button
@@ -131,8 +134,8 @@ export default function TemporaryDrawer() {
               >
               PADI Open Water
               </Button>
-              </ListItem>
-              <ListItem
+              </ListItem></Link>
+              <Link to="/advanced-open-water"><ListItem
               classes={{root:classes.listItem}}
               >
               <Button
@@ -141,7 +144,7 @@ export default function TemporaryDrawer() {
               >
               PADI Advanced
               </Button>
-              </ListItem>
+              </ListItem></Link>
               </List>
             </ExpansionPanelDetails>
           </ExpansionPanel>
@@ -164,7 +167,7 @@ export default function TemporaryDrawer() {
             </ExpansionPanelSummary>
             <ExpansionPanelDetails classes={{root: classes.panel}}>
               <List>
-              <ListItem
+              <Link to="/rescue-diver"><ListItem
               classes={{root:classes.listItem}}
               >
                 <Button
@@ -173,8 +176,8 @@ export default function TemporaryDrawer() {
                 >
                   Rescue Diver
                   </Button>
-                </ListItem>
-                <ListItem
+                </ListItem></Link>
+                <Link to="/specialities"><ListItem
                 classes={{root:classes.listItem}}
                 >
                 <Button
@@ -183,8 +186,8 @@ export default function TemporaryDrawer() {
                 >
                   Specialities
                   </Button>
-                </ListItem>
-                <ListItem
+                </ListItem></Link>
+                <Link to="/divemaster"><ListItem
                 classes={{root:classes.listItem}}
                 >
                 <Button
@@ -193,7 +196,7 @@ export default function TemporaryDrawer() {
                 >
                   Divemaster
                   </Button>
-                </ListItem>
+                </ListItem></Link>
               </List>
               </ExpansionPanelDetails>
           </ExpansionPanel>
@@ -201,6 +204,7 @@ export default function TemporaryDrawer() {
 
           <List classes={{padding: classes.listPadding}}>
           <Divider />
+          <Link to="contact">
           <ListItem
           classes={{root:classes.listItem}}
           >
@@ -208,54 +212,11 @@ export default function TemporaryDrawer() {
           onClick={toggleDrawer(side, false)}
           onKeyDown={toggleDrawer(side, false)}
           >
-          Fun Diving
-          </Button>
-          </ListItem>
-                <Divider />
-                <ListItem
-                classes={{root:classes.listItem}}
-                >
-          <Button
-          onClick={toggleDrawer(side, false)}
-          onKeyDown={toggleDrawer(side, false)}
-          >
-          Freediver
-          </Button>
-          </ListItem>
-                <Divider />
-                <ListItem
-                classes={{root:classes.listItem}}
-                >
-          <Button
-          onClick={toggleDrawer(side, false)}
-          onKeyDown={toggleDrawer(side, false)}
-          >
-          Articles
-          </Button>
-          </ListItem>
-                <Divider />
-                <ListItem
-                classes={{root:classes.listItem}}
-                >
-          <Button
-          onClick={toggleDrawer(side, false)}
-          onKeyDown={toggleDrawer(side, false)}
-          >
-          Gallery
-          </Button>
-          </ListItem>
-                <Divider />
-                <ListItem
-                classes={{root:classes.listItem}}
-                >
-          <Button
-          onClick={toggleDrawer(side, false)}
-          onKeyDown={toggleDrawer(side, false)}
-          >
           Contact Us
           </Button>
-          </ListItem>
+          </ListItem></Link>
                 <Divider />
+                
           <ListItem>
           <div className={classes.socialbar}>
           <FacebookIcon color='secondary'/>

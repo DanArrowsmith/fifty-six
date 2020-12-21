@@ -31,7 +31,6 @@ export default function Index() {
   <Layout>
   <HeroSection />
   <Blurbs />
-  <CardCarousel />
   <Gallery />
   <div className={classes.address} style={{backgroundColor:'#FFF', textAlign:'center', marginTop:0, marginBottom:0,}}>
   <h3 style={{paddingTop: '1rem', backgroundColor:'#FFF', textAlign:'center', marginTop:0, marginBottom:0,}}>FIFTY SIX</h3>
@@ -44,8 +43,7 @@ export default function Index() {
   <br/>
 
   </div>
-  <BlogWidget />
-  <QuoteSection />
+
   </Layout>
 
 )

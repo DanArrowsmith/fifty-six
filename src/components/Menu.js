@@ -83,11 +83,16 @@ import Tab from '@material-ui/core/Tab';
 
 const useStyles = makeStyles({
   root: {
-    flexGrow: 1,
+    flexGrow: 0,
   },
   menu:{
-    '@media (max-width:820px)':{
-    display: 'none',}
+    '@media (max-width:1100px)':{
+    display: 'none',},
+    flexGrow: 0,
+  },
+  tab: {
+    padding: '20px',
+    minWidth: 0,
   },
 });
 
@@ -105,16 +110,17 @@ export default function CenteredTabs() {
         onChange={handleChange}
         indicatorColor="secondary"
         textColor="inherit"
-        variant="fullWidth"
+        variant="standard"
         wrapped="true"
         className={classes.menu}
+        
       >
-        <Tab label="Dive With Us" />
-        <Tab label="Go Pro!" />
-        <Tab label="Fundiving" />
-        <Tab label="Freediver" />
-        <Tab label="Articles" />
-        <Tab label="Contact Us" />
+        <Tab label="Drink With Us" className={classes.tab}/>
+        <Tab label="Go Pro!" className={classes.tab}/>
+        <Tab label="Fundiving" className={classes.tab}/>
+        <Tab label="Freediver" className={classes.tab}/>
+        <Tab label="Articles" className={classes.tab}/>
+        <Tab label="Contact Us" className={classes.tab}/>
       </Tabs>
   );
 }
