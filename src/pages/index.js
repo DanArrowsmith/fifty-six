@@ -30,7 +30,7 @@ export default function Index() {
 
   <Layout>
   <HeroSection />
-  <Blurbs />
+{/*   <Blurbs />
   <Gallery />
   <div className={classes.address} style={{backgroundColor:'#FFF', textAlign:'center', marginTop:0, marginBottom:0,}}>
   <h3 style={{paddingTop: '1rem', backgroundColor:'#FFF', textAlign:'center', marginTop:0, marginBottom:0,}}>FIFTY SIX</h3>
@@ -42,7 +42,7 @@ export default function Index() {
   <Button color='secondary' variant='contained' size='large' style={{maxWidth:'200px', marginLeft:'auto', marginRight: 'auto'}}>Contact Us</Button>
   <br/>
 
-  </div>
+  </div> */}
 
   </Layout>
 

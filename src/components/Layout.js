@@ -9,11 +9,11 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <NavBar />
+      
       <div>
         <main>{children}</main>
       </div>
-      <FooterBar />
+   
     </>
   )
 }

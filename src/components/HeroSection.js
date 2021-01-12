@@ -20,7 +20,7 @@ import { graphql, useStaticQuery } from 'gatsby'
       headerText:{
         color: '#fff',
         textShadow: '2px 2px 4px #000000',
-        maxWidth: '500px',
+        width: '100%',
         padding: '2rem',
         textAlign: 'center',
         display: 'flex',
@@ -33,7 +33,7 @@ import { graphql, useStaticQuery } from 'gatsby'
       description:{
         color: '#fff',
         textShadow: '2px 2px 4px #000000',
-        maxWidth: '500px',
+        width: '100%',
         padding: '2rem',
         '@media (max-width: 999px)':{
           paddingTop: 0,
@@ -42,6 +42,7 @@ import { graphql, useStaticQuery } from 'gatsby'
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
+        alignItems: 'middle',
       },
       headerTextHidden:{
         color: '#fff',
@@ -57,7 +58,7 @@ import { graphql, useStaticQuery } from 'gatsby'
 
       descriptionHidden:{
         color: '#fff',
-        maxWidth: '500px',
+        width: '100%',
         padding: '2rem',
         '@media (max-width: 999px)':{
           paddingTop: 0,
@@ -73,7 +74,7 @@ import { graphql, useStaticQuery } from 'gatsby'
 
     const data = useStaticQuery(graphql`
       query {
-        file(name: { eq: "anemone-fish" }, extension: { eq: "jpg" }) {
+        file(name: { eq: "waves" }, extension: { eq: "jpg" }) {
           childImageSharp {
             fluid(maxWidth: 1400
             ) {
@@ -95,16 +96,16 @@ import { graphql, useStaticQuery } from 'gatsby'
   backgroundSize: 'cover',
   backgroundPosition: 'center',
   backgroundRepeat: 'no-repeat',
-  minHeight: '100vh',
+  height: '100vh',
   width: '100vw',
   display: 'flex',
-  flexDirection: 'row',
+  flexDirection: 'column',
   justifyContent: 'center',
   alignItems: 'middle',
   flexWrap: 'wrap',
   zIndex: -1,
   position: 'fixed',
-  filter: 'brightness(90%)'
+  filter: 'brightness(50%)'
 
 
 }}>
@@ -113,31 +114,65 @@ import { graphql, useStaticQuery } from 'gatsby'
         <h1 style={{fontFamily:'Scriptina'}}>The Art of Diving</h1></div>
 
         <div className={classes.descriptionHidden}>
-        <h2 style={{marginTop:0}}>Koh Tao</h2>
+        <div style={{maxWidth:"700px", alignSelf:"center"}}>
+        <h2 style={{marginTop:0}}>F I F T Y 5 6 S I X</h2>
 
-        <p>Come dive with us!Come dive with us!Come dive with us!Come dive with us!Come dive with us!Come dive with us!Come dive with us!Come dive with us!</p>
+        <p>NEW YEAR NEW US!
+
+Thank you for visiting FIFTY56SIX. After being open for nearly 56 weeks, and getting our shop looking as amazing as it does, we have finally found time to make sure our webpage reflects that. 
+</p><p>
+So we are currently getting #Team56SVD (Silicone Valley Department) to update, tweek, scroll and click *Insert any other computer jargon you may know here* 
+</p><p>
+If you have any queries relating to FIFTY56SIX, To Diving, OR to Koh Tao and Thailand, please email us at 
+</p><p>
+INFO@fiftysixdive.com 
+</p><p>
+And we shall be happy to answer any questions you might have. 
+</p><p>
+Thank you, and let us hope 2021 is slightly better than last year!
+</p><p>
+Look forward to hearing from you soon. 
+</p><p>
+Love Rich & The 56 Team</p>
         <Button color='secondary' variant='contained' size='large' style={{maxWidth:'100px', marginLeft:'auto', marginRight: 'auto'}}>Button</Button>
-        </div>
+        </div></div>
         </BackgroundImage>
 
         <div style={{minHeight: '100vh',
         width: '100vw',
         display: 'flex',
-        flexDirection: 'row',
+        flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'middle',
         flexWrap: 'wrap',}}>
         <div className={classes.headerText}>
+      
         <h1 style={{fontFamily:'Scriptina'}}>The Art of Diving</h1></div>
 
         <div className={classes.description}>
-        <h2 style={{marginTop:0}}>Koh Tao</h2>
+        <div style={{maxWidth:"700px", alignSelf:"center"}}>
+        <h2 style={{marginTop:0, fontSize:"30px"}}>F I F T Y <span style={{color:'orange'}}>5 6</span> S I X</h2>
 
-        <p>Come dive with us!Come dive with us!Come dive with us!Come dive with us!Come dive with us!Come dive with us!Come dive with us!Come dive with us!</p>
-        <Button color='secondary' variant='contained' size='large' style={{maxWidth:'100px', marginLeft:'auto', marginRight: 'auto'}}>Button</Button>
-        </div>
+        <p>NEW YEAR NEW US!</p><p>
 
+Thank you for visiting FIFTY56SIX. </p><p>After being open for nearly 56 weeks, and getting our shop looking as amazing as it does, we have finally found time to make sure our webpage reflects that. 
+</p><p>
+So we are currently getting #Team56SVD (Silicone Valley Department) to update, tweek, scroll and click *Insert any other computer jargon you may know here* 
+</p><p>
+If you have any queries relating to FIFTY56SIX, To Diving, OR to Koh Tao and Thailand, please email us at 
+</p><p>
+INFO@fiftysixdive.com 
+</p><p>
+And we shall be happy to answer any questions you might have. 
+</p><p>
+Thank you, and let us hope 2021 is slightly better than last year!
+</p><p>
+Look forward to hearing from you soon. 
+</p><p>
+Love Rich & The 56 Team<br></br><br></br><br></br></p></div>
         </div>
+</div>
+        
         </>
 
 
