@@ -11,9 +11,6 @@ export default function TopLayout(props) {
       <Helmet>
     
     
-    /* PUT THE CODE BELOW THIS LINE RICH !!!!!*/
-    
-    <meta name="google-site-verification" content="LMJdsV0KC946acR4fIrJEnxxgN_38R1a89pxj1FKA0g" />
     
     
         <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width" />
